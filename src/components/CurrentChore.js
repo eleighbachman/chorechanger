@@ -19,7 +19,6 @@ class CurrentChore extends Component {
     let random = _.random(this.props.chores.length - 1);
     let randomChore = this.props.chores[random];
     if(this.props.activeChore !== '') {
-      console.log(this.props.activeChore);
       this.props.archiveActive(this.props.activeChore);
     }
 

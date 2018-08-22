@@ -4,7 +4,6 @@ export const CLEAR_CHORES = 'CLEAR_CHORES';
 export const RESET_CHORES = 'RESET_CHORES';
 export const COMPLETE_CHORE = 'COMPLETE_CHORE';
 export const UNDO_CHORE = 'UNDO_CHORE';
-export const START_RUNNING = 'START_RUNNING';
 export const INCREMENT_CHORE = 'INCREMENT_CHORE';
 export const SET_ACTIVE = 'SET_ACTIVE';
 export const ARCHIVE_ACTIVE = 'ARCHIVE_ACTIVE';
@@ -46,12 +45,6 @@ export function undoChore(chore) {
   return {
     type: UNDO_CHORE,
     payload: chore
-  }
-}
-
-export function startRunning() {
-  return {
-    type: START_RUNNING
   }
 }
 

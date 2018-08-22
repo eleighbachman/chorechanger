@@ -14,7 +14,7 @@ export default function(state=["Practice Norsk", "Study Redux"], action) {
     case ADD_CHORE:
       return [action.payload, ...state]
     case CLEAR_CHORES:
-      return state=[]
+      return [];
     case RESET_CHORES:
       return [...action.payload, ...state]
     case COMPLETE_CHORE:
