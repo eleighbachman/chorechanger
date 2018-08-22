@@ -1,0 +1,114 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #292929;
+  height: 100px;
+  padding: 10px;
+  color: white;
+}
+
+.App-title {
+  font-size: 3em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.instruction {
+  font-size: 1.2em;
+  margin-bottom: 0px;
+}
+
+.subtext {
+  font-size: 0.8em;
+  font-style: italic;
+}
+
+.choreInput {
+  width: 200px;
+  height: 25px;
+  border-radius: 2px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.project {
+  border: 1px solid #ddd;
+  background-color: #eee;
+  min-height: 400px;
+  margin: 40px 60px;
+  padding: 10px;
+  border-radius: 10px;
+  overflow: auto;
+}
+
+.lists {
+  min-height: 400px;
+}
+
+.list {
+  width: 50%;
+  float: left;
+}
+
+.list ul {
+  padding: 0px;
+}
+
+.list li {
+  background-color: #fff;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 2px;
+  border-radius: 5px;
+  list-style: none;
+  height: 20px;
+  padding: 10px 0px;
+  border: 2px solid #fff;
+}
+
+.list li:hover, .btn:hover {
+  cursor: pointer;
+}
+
+.list li:hover {
+  border: 2px solid #ddd;
+}
+
+.btn {
+  font-size: 18px;
+  background-color: #292929;
+  color: #eee;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #00d8ff;
+  color: #292929;
+}
+
+.done li {
+  text-decoration: line-through;
+  font-style: italic;
+  color: #bbb;
+}
+
+.currentChore {
+  background-color: #fff;
+  font-size: 48px;
+  padding-top: 30px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  height: 120px;
+}
+
+.currentChore:hover {
+  cursor:pointer;
+  border: 2px solid #ddd;
+}
