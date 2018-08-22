@@ -11,24 +11,32 @@ class ChoreInput extends Component {
     }
   };
 
-  handleSubmit = () => {
+  handleSubmit = (e) => {
+    e.preventDefault();
+    if(this.state.newChore !== '') {
     this.setState({
       newChore: ''
     })
     this.props.addChore(this.state.newChore);
+  }
   }
 
   handleChange = (e) => {
     this.setState({
       newChore: e.target.value
     })
+
   }
-  
+
+
   render() {
     return(
       <div>
+      <form onSubmit={this.handleSubmit}>
         <input onChange={this.handleChange} value={this.state.newChore} type="text" className="choreInput"/><br/>
-        <button onClick={this.handleSubmit} className="btn" type="submit">Submit</button>
+
+          <button className="btn" type="submit">Submit</button>
+        </form>
       </div>
     )
   }

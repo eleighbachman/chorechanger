@@ -22,7 +22,7 @@ class App extends Component {
             Enter in your chores to the list below, then click START to randomly select one.
           </p>
           <p className="subtext">
-            Completed chores will move to the completed list. Click RESET to start over.
+            Click the chore to progress to the next random chore. Completed chores will move to the completed list. Click RESET to start over, or CLEAR to remove all chores from your to-do list.
           </p>
           <div className="project">
             <ChoreInput />
